@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+  }
+  h1 {
+    margin-bottom: 20px;
+  }
+  #controls {
+    margin-bottom: 15px;
+  }
+  #controls button {
+    font-size: 16px;
+    padding: 8px 12px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  #keyboard-container {
+    display: inline-block;
+    margin-bottom: 20px;
+    border: 2px solid #333;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  .keyboard-layout {
+    margin: 5px 0;
+  }
+  .keyboard-row {
+    margin: 5px 0;
+  }
+  .key {
+    font-size: 18px;
+    padding: 10px 14px;
+    margin: 3px;
+    border: 2px solid #333;
+    border-radius: 4px;
+    background-color: #eee;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+  }
+  .key.highlight {
+    border-color: green;
+    background-color: #cfc;
+  }
+  #output {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Virtual Keyboard with Row-Column Scanning</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Virtual Keyboard with Scanning Mode &amp; using white-space</h1>
+  
+  <div id="controls">
+    <button id="toggleScan">Start Scanning Mode</button>
+    <button id="toggleKeyboard">Switch to Numbers</button>
+    <button id="toggleCase">Toggle Case</button>
+  </div>
+  
+  <div id="keyboard-container">
+    <div id="letters-keyboard" class="keyboard-layout">
+      <div class="keyboard-row" id="row1">
+        <button class="key">Q</button>
+        <button class="key">W</button>
+        <button class="key">E</button>
+        <button class="key">R</button>
+        <button class="key">T</button>
+        <button class="key">Y</button>
+        <button class="key">U</button>
+        <button class="key">I</button>
+        <button class="key">O</button>
+        <button class="key">P</button>
+      </div>
+      <div class="keyboard-row" id="row2">
+        <button class="key">A</button>
+        <button class="key">S</button>
+        <button class="key">D</button>
+        <button class="key">F</button>
+        <button class="key">G</button>
+        <button class="key">H</button>
+        <button class="key">J</button>
+        <button class="key">K</button>
+        <button class="key">L</button>
+      </div>
+      <div class="keyboard-row" id="row3">
+        <button class="key">Z</button>
+        <button class="key">X</button>
+        <button class="key">C</button>
+        <button class="key">V</button>
+        <button class="key">B</button>
+        <button class="key">N</button>
+        <button class="key">M</button>
+      </div>
+      <div class="keyboard-row" id="row4">
+        <button class="key" id="spaceKey">Space</button>
+      </div>
+    </div>
+    
+    <div id="numbers-keyboard" class="keyboard-layout" style="display:none;">
+      <div class="keyboard-row" id="numRow1">
+        <button class="key">1</button>
+        <button class="key">2</button>
+        <button class="key">3</button>
+        <button class="key">4</button>
+        <button class="key">5</button>
+        <button class="key">6</button>
+        <button class="key">7</button>
+        <button class="key">8</button>
+        <button class="key">9</button>
+        <button class="key">0</button>
+      </div>
+    </div>
+  </div>
+  
+  <div id="output">
+    <h2>Output:</h2>
+    <p id="typedText"></p>
+  </div>
+  
+  <script src="keyboard.js"></script>
+</body>
+</html>
